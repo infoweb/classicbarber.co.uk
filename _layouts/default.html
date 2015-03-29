@@ -4,7 +4,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<meta name="keywords" content="Barber, Barbershop, Hairdresser, Hertford, Hertfordshire, American Crew, NHF, National Hairdressers Federation">
 	<meta name="description" content="Best barbershop in Hertford catering for the young lads of the area.">
-	<title>The Classic Barber of Hertford</title>
+	<title>{% if page.title %}{{ page.title }} | The Classic Barber of Hertford{% else %}{{ site.title }}{% endif %}</title>
+
 	<link href="stylesheet.css" rel="stylesheet" type="text/css" />
 </head>
 

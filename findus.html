@@ -1,74 +1,45 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/master.dwt" codeOutsideHTMLIsLocked="false" -->
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta name="keywords" content="Barber, Barbershop, Hairdresser, Hertford, Hertfordshire, American Crew, NHF, National Hairdressers Federation">
-<meta name="description" content="Best barbershop in Hertford catering for the young lads of the area.">
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>The Classic Barber of Hertford</title>
-<!-- InstanceEndEditable -->
-<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
-<link href="stylesheet.css" rel="stylesheet" type="text/css" />
-</head>
+---
+title:		Find Us
+layout:		default
+priority:	0.5
+lastmod:	2015-03-29
+---
 
-<body>
+<script
+src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA1B-JlyhQ7CSUvEPzeJN5BxTg7uY9tUrvqwcfI43biwaz0IEpbRTj5ZHTcA3KPgN7p97q2JYkvFAwJg"
+type="text/javascript">
+</script>
+<script type="text/javascript">
+//<![CDATA[
 
-<div id="container">
-	<div id="header">
-		<h1><a href="/"><img name="logo" src="image/logo.gif" width="391" height="77" border="0" alt="The Classic Barber Hertford" title="The Classic Barber Hertford" /></a></h1>
-		<div id="address">
-			<p>23b Old Cross</p>
-			<p>HERTFORD</p>
-			<p>Hertfordshire</p>
-			<p>SG14 1RE</p>
-			<p>Tel: 01992 505 527</p>
-		</div>
-	</div>
-	<div id="body"><!-- InstanceBeginEditable name="main" -->
-	<script 
-	src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA1B-JlyhQ7CSUvEPzeJN5BxTg7uY9tUrvqwcfI43biwaz0IEpbRTj5ZHTcA3KPgN7p97q2JYkvFAwJg"
-	type="text/javascript">
-	</script>
-	<script type="text/javascript">
-	//<![CDATA[
-	
-	function load() {
-		if (GBrowserIsCompatible()) {
-			var map = new GMap2(document.getElementById("map"));
-			var name = 'The Classic Barber';
-			var address = "23b Old Cross";
-			var town = "Hertford";
-			var county = "Hertfordshire";
-			var postcode = "SG14 1RE";
-			var phone = "Tel: 01992 505 527";
-			var WINDOW_HTML = '<div id="window" style="width:150px;padding-right:0px"><strong>'+name+'</strong><br />'+address+'<br />'+town+'<br />'+county+'<br />'+postcode+'<br />'+phone+'<br /><div>';
+function load() {
+	if (GBrowserIsCompatible()) {
+		var map = new GMap2(document.getElementById("map"));
+		var name = 'The Classic Barber';
+		var address = "23b Old Cross";
+		var town = "Hertford";
+		var county = "Hertfordshire";
+		var postcode = "SG14 1RE";
+		var phone = "Tel: 01992 505 527";
+		var WINDOW_HTML = '<div id="window" style="width:150px;padding-right:0px"><strong>'+name+'</strong><br />'+address+'<br />'+town+'<br />'+county+'<br />'+postcode+'<br />'+phone+'<br /><div>';
 
-			map.addControl(new GSmallMapControl());
-			map.addControl(new GMapTypeControl());
-			map.setCenter(new GLatLng(51.797622,-0.081050), 15);
-			var marker = new GMarker(new GLatLng(51.797622,-0.081050));
-			map.addOverlay(marker);
+		map.addControl(new GSmallMapControl());
+		map.addControl(new GMapTypeControl());
+		map.setCenter(new GLatLng(51.797622,-0.081050), 15);
+		var marker = new GMarker(new GLatLng(51.797622,-0.081050));
+		map.addOverlay(marker);
 
-			GEvent.addListener(marker, "click", function() {
-				marker.openInfoWindowHtml(WINDOW_HTML);
-			});
+		GEvent.addListener(marker, "click", function() {
 			marker.openInfoWindowHtml(WINDOW_HTML);
- 		}
-	}
-	//]]>
-	</script>
+		});
+		marker.openInfoWindowHtml(WINDOW_HTML);
+		}
+}
+//]]>
+</script>
 
-	<div id="map" style="width:580px;height:400px;border:1px solid #999;margin:50px;" />
+<div id="map" style="width:580px;height:400px;border:1px solid #999;margin:50px;" />
 
-	<script type="text/javascript">
-		 load();
-	</script>
-	<!-- InstanceEndEditable --></div>
-	<div id="footer">
-		<a href="about.html">about us</a> | <a href="findus.html">find us</a> | <a href="mailto:info@classicbarber.co.uk">email us</a> | <a href="hours.html">hours</a> | <a href="price.html">price list</a> | <a href="product.html">products</a> | <a href="recruitment.html">jobs</a> 
-		<p>&copy;The Classic Barber 1995-<script language="JavaScript" type="text/javascript">var dateNow = new Date();document.write(dateNow.getFullYear());</script></p>
-		<p>Design, development and hosting by <a href="http://www.infoweb.co.uk/" target="_blank">infoWEB</a></p>
-	</div>
-</div>
-</body>
-<!-- InstanceEnd --></html>
+<script type="text/javascript">
+	 load();
+</script>
