@@ -6,8 +6,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title></title>
-		<meta name="description" content="">
+		<title>{% if page.title %}{{ page.title }} | The Classic Barber of Hertford{% else %}{{ site.title }}{% endif %}</title>
+		<meta name="keywords" content="Barber, Barbershop, Hairdresser, Hertford, Hertfordshire, American Crew, NHF, National Hairdressers Federation">
+		<meta name="description" content="Best barbershop in Hertford catering for the young lads of the area.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
@@ -63,8 +64,28 @@
 				<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
 			</div>
 		</div>
+		<div id="header">
+			<h1><a href="/"><img name="logo" src="image/logo.gif" width="391" height="77" border="0" alt="The Classic Barber Hertford" title="The Classic Barber Hertford" /></a></h1>
+			<div id="address">
+				<p>23b Old Cross</p>
+				<p>HERTFORD</p>
+				<p>Hertfordshire</p>
+				<p>SG14 1RE</p>
+				<p>Tel: 01992 505 527</p>
+			</div>
+		</div>
 
 		{{ content }}
+
+		<div class="container">
+			<hr>
+
+			<footer>
+				<a href="about.html">about us</a> | <a href="findus.html">find us</a> | <a href="mailto:info@classicbarber.co.uk">email us</a> | <a href="hours.html">hours</a> | <a href="price.html">price list</a> | <a href="product.html">products</a> | <a href="recruitment.html">jobs</a>
+				<p>&copy;The Classic Barber 1995-<script language="JavaScript" type="text/javascript">var dateNow = new Date();document.write(dateNow.getFullYear());</script></p>
+				<p>Design, development and hosting by <a href="http://www.infoweb.co.uk/" target="_blank">infoWEB</a></p>
+			</footer>
+		</div>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
