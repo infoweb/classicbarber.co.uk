@@ -17,8 +17,8 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<style>
 			body {
-					padding-top: 50px;
-					padding-bottom: 20px;
+				padding-top: 20px;
+				padding-bottom: 20px;
 			}
 		</style>
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -31,6 +31,7 @@
 		<!--[if lt IE 8]>
 				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
+{% comment %}
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
@@ -55,23 +56,25 @@
 				</div>
 			</div>
 		</nav>
+{% endcomment %}
 
-		<!-- Main jumbotron for a primary marketing message or call to action -->
-		<div class="jumbotron">
-			<div class="container">
-				<h1>Hello, world!</h1>
-				<p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-				<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-			</div>
-		</div>
-		<div id="header">
-			<h1><a href="/"><img name="logo" src="image/logo.gif" width="391" height="77" border="0" alt="The Classic Barber Hertford" title="The Classic Barber Hertford" /></a></h1>
-			<div id="address">
-				<p>23b Old Cross</p>
-				<p>HERTFORD</p>
-				<p>Hertfordshire</p>
-				<p>SG14 1RE</p>
-				<p>Tel: 01992 505 527</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<a href="/">
+						<img name="logo" src="image/logo.gif" width="391" height="77" border="0" alt="The Classic Barber Hertford" title="The Classic Barber Hertford" class="img-responsive" />
+					</a>
+				</div>
+
+				<div class="col-md-6">
+					<address class="text-right">
+						23b Old Cross<br>
+						HERTFORD<br>
+						Hertfordshire<br>
+						SG14 1RE<br>
+						Tel: 01992 505 527
+					</address>
+				</div>
 			</div>
 		</div>
 
@@ -80,9 +83,13 @@
 		<div class="container">
 			<hr>
 
-			<footer>
-				<a href="about.html">about us</a> | <a href="findus.html">find us</a> | <a href="mailto:info@classicbarber.co.uk">email us</a> | <a href="hours.html">hours</a> | <a href="price.html">price list</a> | <a href="product.html">products</a> | <a href="recruitment.html">jobs</a>
+			<footer class="text-center">
+				<p>
+					<a href="about.html">about us</a> | <a href="findus.html">find us</a> | <a href="mailto:info@classicbarber.co.uk">email us</a> | <a href="hours.html">hours</a> | <a href="price.html">price list</a> | <a href="product.html">products</a> | <a href="recruitment.html">jobs</a>
+				</p>
+
 				<p>&copy;The Classic Barber 1995-<script language="JavaScript" type="text/javascript">var dateNow = new Date();document.write(dateNow.getFullYear());</script></p>
+
 				<p>Design, development and hosting by <a href="http://www.infoweb.co.uk/" target="_blank">infoWEB</a></p>
 			</footer>
 		</div>
