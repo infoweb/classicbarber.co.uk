@@ -6,42 +6,48 @@ lastmod:	2015-03-29
 ---
 
 <div class="container">
-	<script
-	src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA1B-JlyhQ7CSUvEPzeJN5BxTg7uY9tUrvqwcfI43biwaz0IEpbRTj5ZHTcA3KPgN7p97q2JYkvFAwJg"
-	type="text/javascript">
-	</script>
-	<script type="text/javascript">
-	//<![CDATA[
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Find Us</h1>
 
-	function load() {
-		if (GBrowserIsCompatible()) {
-			var map = new GMap2(document.getElementById("map"));
-			var name = 'The Classic Barber';
-			var address = "23b Old Cross";
-			var town = "Hertford";
-			var county = "Hertfordshire";
-			var postcode = "SG14 1RE";
-			var phone = "Tel: 01992 505 527";
-			var WINDOW_HTML = '<div id="window" style="width:150px;padding-right:0px"><strong>'+name+'</strong><br />'+address+'<br />'+town+'<br />'+county+'<br />'+postcode+'<br />'+phone+'<br /><div>';
+			<script
+			src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA1B-JlyhQ7CSUvEPzeJN5BxTg7uY9tUrvqwcfI43biwaz0IEpbRTj5ZHTcA3KPgN7p97q2JYkvFAwJg"
+			type="text/javascript">
+			</script>
+			<script type="text/javascript">
+			//<![CDATA[
 
-			map.addControl(new GSmallMapControl());
-			map.addControl(new GMapTypeControl());
-			map.setCenter(new GLatLng(51.797622,-0.081050), 15);
-			var marker = new GMarker(new GLatLng(51.797622,-0.081050));
-			map.addOverlay(marker);
+			function load() {
+				if (GBrowserIsCompatible()) {
+					var map = new GMap2(document.getElementById("map"));
+					var name = 'The Classic Barber';
+					var address = "23b Old Cross";
+					var town = "Hertford";
+					var county = "Hertfordshire";
+					var postcode = "SG14 1RE";
+					var phone = "Tel: 01992 505 527";
+					var WINDOW_HTML = '<div id="window" style="width:150px;padding-right:0px"><strong>'+name+'</strong><br />'+address+'<br />'+town+'<br />'+county+'<br />'+postcode+'<br />'+phone+'<br /><div>';
 
-			GEvent.addListener(marker, "click", function() {
-				marker.openInfoWindowHtml(WINDOW_HTML);
-			});
-			marker.openInfoWindowHtml(WINDOW_HTML);
+					map.addControl(new GSmallMapControl());
+					map.addControl(new GMapTypeControl());
+					map.setCenter(new GLatLng(51.797622,-0.081050), 15);
+					var marker = new GMarker(new GLatLng(51.797622,-0.081050));
+					map.addOverlay(marker);
+
+					GEvent.addListener(marker, "click", function() {
+						marker.openInfoWindowHtml(WINDOW_HTML);
+					});
+					marker.openInfoWindowHtml(WINDOW_HTML);
+					}
 			}
-	}
-	//]]>
-	</script>
+			//]]>
+			</script>
 
-	<div id="map" style="width:580px;height:400px;border:1px solid #999;margin:50px;" />
+			<div id="map" style="width:580px;height:400px;border:1px solid #999;margin:50px;" />
 
-	<script type="text/javascript">
-		 load();
-	</script>
+			<script type="text/javascript">
+				 load();
+			</script>
+		</div>
+	</div>
 </div>
