@@ -1,4 +1,4 @@
-let siteurl = 'hthttps://www.classicbarber.co.uk/';
+let siteurl = 'https://www.classicbarber.co.uk/';
 
 switch ( process.env.ELEVENTY_ENV ) {
 	case 'development':
