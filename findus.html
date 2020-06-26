@@ -17,30 +17,9 @@ lastmod:	2020-06-15
 	</div>
 </div>
 
-
-<!-- google maps api key AIzaSyAbV84pIOW4BGiqLBk8rMTw0XF6UpNR_jw -->
-
-
-
-
-
 <script>
-	function initMap() {
-		var shopLocation = {lat: 51.7975394, lng: -0.0808702};
-
-		var map = new google.maps.Map(document.getElementById('map'), {
-			draggable: false,
-			center: shopLocation,
-			zoom: 15
-		});
-
-		var marker = new google.maps.Marker({
-			position: shopLocation,
-			map: map,
-			title: 'Hello World!'
-		});
-
-		var contentString = '<div id="window">'+
+    function initMap() {
+        var contentString = '<div id="window">'+
 			'<strong>The Classic Barber</strong><br>'+
 			'23b Old Cross<br>'+
 			'Hertford<br>'+
@@ -48,13 +27,24 @@ lastmod:	2020-06-15
 			'Tel: 01992 505 527<br>'+
 			'<div>';
 
-		var infowindow = new google.maps.InfoWindow({
-			content: contentString,
-			maxWidth: 200
-		});
+		var location = { lat: 51.797566, lng: -0.080739 };
 
-		infowindow.open(map, marker);
-	}
+        var map = new google.maps.Map( document.getElementById( 'map' ), {
+            zoom: 15,
+            center: location
+        } );
+
+        var marker = new google.maps.Marker( {
+            position: location,
+            map: map
+        } );
+
+        var infowindow = new google.maps.InfoWindow( {
+            content: contentString
+        } );
+
+        infowindow.open( map, marker );
+    }
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz0WF8_QceAR-C6LRsV-dAsZhvQxdc6Sk&callback=initMap"></script>
