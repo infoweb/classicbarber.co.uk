@@ -4,3 +4,10 @@
 [context.preview] # 'preview' is the branch name
   publish = "_site/"
   command = "ELEVENTY_ENV=preview eleventy"
+
+# https://github.com/netlify-labs/netlify-plugin-sitemap
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  buildDir = "_site/"
