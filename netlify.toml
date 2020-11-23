@@ -16,5 +16,5 @@ package = "@netlify/plugin-sitemap"
   trailingSlash = true
   exclude = [
     # By file Path
-    '_site/404/index.html'
+    '_site/404/**'
   ]
