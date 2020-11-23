@@ -13,3 +13,8 @@ package = "@netlify/plugin-sitemap"
   buildDir = "_site/"
   changeFreq = "monthly"
   priority = 0.5
+  trailingSlash = true
+  exclude = [
+    # By file Path
+    './404.html',
+  ]
