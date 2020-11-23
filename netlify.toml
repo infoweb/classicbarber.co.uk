@@ -11,3 +11,5 @@ package = "@netlify/plugin-sitemap"
 
   [plugins.inputs]
   buildDir = "_site/"
+  changeFreq = "monthly"
+  priority = 0.5
