@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-		"watch": "npx @11ty/eleventy --input ./ --serve --watch"
+    "watch": "npx @11ty/eleventy --input ./ --serve --watch"
   },
   "repository": {
     "type": "git",
