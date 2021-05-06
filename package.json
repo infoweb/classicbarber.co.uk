@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "npx @11ty/eleventy --input ./ --serve --watch"
+    "watch": "npx @11ty/eleventy --input ./ --serve"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,7 @@
   },
   "homepage": "https://github.com/classicbarber/classicbarber.co.uk#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
-  },
-  "dependencies": {
-    "dotenv": "^8.2.0"
+    "@11ty/eleventy": "^0.12.1",
+    "dotenv": "^9.0.0"
   }
 }
